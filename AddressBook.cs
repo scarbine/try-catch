@@ -6,19 +6,19 @@ namespace try_catch
 {
     public class AddressBook
     {
-       public Dictionary<string, string> addressBook;
+       public Dictionary<string, Contact> addressBook;
 
 
 
     public void AddContact(Contact contact)
     {
-        addressBook.Add(contact.Email, contact.FullName);
+        addressBook.Add(contact.Email, contact);
     }
 
-    public void GetByEmail(string email)
+    public Contact GetByEmail(string email)
     {
-        // Contact foundContact = addressBook. (e => email == e);
         
+        return addressBook[email];
     }
 
     }
