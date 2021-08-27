@@ -17,9 +17,14 @@ namespace try_catch
 
     public void AddContact(Contact contact)
     {   
-    
+        try
+        {
         addressBook.Add(contact.Email, contact);
-        
+        }
+        catch
+        {
+        Console.WriteLine($" Excption! You tried to add a Key value pair that has already been added.{contact.Email}");
+        }
     }
 
     public Contact GetByEmail(string email)
