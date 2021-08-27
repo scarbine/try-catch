@@ -80,7 +80,7 @@ namespace try_catch
                 catch
                 {
                     Console.WriteLine("----------------------------");
-                    Console.WriteLine($"The email {email} does not match a current contact. Yo Data curupt");
+                    Console.WriteLine($"The email {email} does not match a current contact. Yo Data currupt");
                     // Console.WriteLine("----------------------------");
                 }
             }
